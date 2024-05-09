@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="user-name">User:</h1>
+        <h1 id="chat">Chat: not-selected</h1>
+
+        <input
+            id="username-input"
+            type="text"
+            placeholder="write username..."
+        />
+        <button id="username-button">change username</button>
+
+        <br />
+        <br />
+
+        <input id="chat-input" type="text" placeholder="write chatname..." />
+        <button id="chat-button">connect chat</button>
+
+        <br />
+        <br />
+
+        <button id="video-call" onclick="call()">Video Call</button>
+
+        <video id="local-video" muted autoplay></video>
+        <video id="remote-video" autoplay></video>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
